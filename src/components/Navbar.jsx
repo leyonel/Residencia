@@ -3,13 +3,45 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   height: 60px;
-  background-color: black;
+`;
+
+
+const Wrapper =  styled.div`
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+`;
+
+const Left = styled.div`
+flex:1;
+`;
+
+const Language = styled.span`
+    font-size: 20px;
+    cursor: pointer;
+`;
+
+
+const Right = styled.div`
+flex:1;
+`;
+const Center = styled.div`
+flex:1;
 `;
 
 const Navbar = () => {
   return (
     <Container>
-        Navbar
+        <Wrapper>
+            <Left>
+                <Language>
+                    EN
+                </Language>
+            </Left>
+            <Center>Center</Center>
+            <Right>Rigth</Right>
+        </Wrapper>
+       
     </Container>
   )
 }
